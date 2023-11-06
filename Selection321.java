@@ -14,7 +14,26 @@ public class Selection321 {
         operand1 = input21.nextDouble();
          System.out.println("Input operand 2 : ");
         operand2 = input21.nextDouble();
-         System.out.println("Input operand 3 : ");
-        operand3 = input21.nextDouble();
+         System.out.println("Input operator ( + - * / ) = ");
+        operator = input21.next().charAt(0);
+
+        switch (operator) {
+            case '+':
+             result = operand1 + operand2;
+            System.out.println(operand1 + " + " + operand2 + " = " + result);
+            
+            case '-':
+             result = operand1 - operand2;
+            System.out.println(operand1 + " - " + operand2 + " = " + result);
+                break;
+            case '*':
+             result = operand1 * operand2;
+            System.out.println(operand1 + " * " + operand2 + " = " + result);
+                break;
+            case '/':
+             result = operand1 / operand2;
+            System.out.println(operand1 + " / " + operand2 + " = " + result);
+                break;
+        }
     }
 }
